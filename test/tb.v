@@ -26,11 +26,12 @@ module tb ();
     // Are the utility wires for dut.input  ? 
     // reg input;
 	
-    wire bus_out = uo_out;  // bus_out [7:0] takes [7:0] uo_out
 
     wire [7:0] uo_out;
     wire [7:0] uio_out;
     wire [7:0] uio_oe;
+
+    wire bus_out = uo_out;  // bus_out [7:0] takes [7:0] uo_out
 
     tt_um_sap_1 tt_um_sap_1 (
     // include power ports for the Gate Level test
